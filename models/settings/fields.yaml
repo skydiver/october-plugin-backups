@@ -1,0 +1,28 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    backup_hint:
+        type: hint
+        path   : $/martin/backups/models/settings/_backup_hint.htm
+
+    backup_name:
+        label      : martin.backups::lang.settings.form.backup_name
+        span       : left
+        required   : true
+        placeholder: Backups
+
+    backup_path:
+        label      : martin.backups::lang.settings.form.backup_path
+        span       : left
+        required   : true
+        placeholder: backups
+
+    backup_absolute:
+        label       : martin.backups::lang.settings.form.backup_absolute
+        commentAbove: martin.backups::lang.settings.form.backup_absolute_c
+        type        : switch
+        span        : left
+        default     : false

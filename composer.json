@@ -1,0 +1,6 @@
+{
+    "name": "martin/login",
+    "require": {
+        "spatie/laravel-backup": "^3.10"
+    }
+}
