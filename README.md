@@ -6,9 +6,10 @@ This package adds support for [Spatie Laravel Backup](https://github.com/spatie/
 
 
 ### Installation
-1. create a directory /\<october\>/plugins/**martin**/
+1. create a directory \<october\>/plugins/**martin**/
 2. clone this repo inside **martin** with **backups** name
-3. run ```php artisan vendor:publish --provider="Spatie\Backup\BackupServiceProvider"```
+3. run ```composer update``` inside \<october\>/plugins/martin/
+4. run ```php artisan vendor:publish --provider="Spatie\Backup\BackupServiceProvider"```
 
 
 ### Usage
