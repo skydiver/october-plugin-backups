@@ -8,6 +8,9 @@ fields:
         type: hint
         path   : $/martin/backups/models/settings/_backup_hint.htm
 
+    backup_toolbar:
+        type: backups_toolbar
+
     backup_name:
         label      : martin.backups::lang.settings.form.backup_name
         span       : left

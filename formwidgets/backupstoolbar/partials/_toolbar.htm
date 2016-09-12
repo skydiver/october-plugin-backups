@@ -1,0 +1,13 @@
+<button
+    type="button"
+    data-request="onBackup"
+    data-request-loading="#backup-loader"
+    class="btn btn-primary oc-icon-rocket">
+    <?= e(trans('martin.backups::lang.settings.form.toolbar.button_backup')) ?>
+</button>
+
+<span id="backup-loader" style="display:none" class="loading-indicator-container">
+    <div class="loading-indicator">
+        <span></span>
+    </div>
+</span>

@@ -72,6 +72,15 @@
             ];
         }
 
+        public function registerFormWidgets() {
+            return [
+                'Martin\Backups\FormWidgets\BackupsToolbar' => [
+                    'label' => 'Backups Toolbar',
+                    'code'  => 'backups_toolbar'
+                ]
+            ];
+        }
+
     }
 
 ?>
