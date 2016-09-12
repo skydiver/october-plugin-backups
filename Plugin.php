@@ -24,6 +24,7 @@
             $backup_name = Settings::get('backup_name');
             $backup_path = Settings::get('backup_path');
             $backup_abs  = Settings::get('backup_absolute');
+            $backup_size = Settings::get('backups_size_limit', 500);
 
             # MODIFY PATH IF REQUIRED
             if($backup_abs == 0) {
@@ -43,6 +44,9 @@
             # SET backup monitor
             Config::set('laravel-backup.monitorBackups.0.name'   , $backup_name);
             Config::set('laravel-backup.monitorBackups.0.disks.0', 'mbackups');
+
+            # SET size limit
+            Config::set('laravel-backup.cleanup.defaultStrategy.deleteOldestBackupsWhenUsingMoreMegabytesThan', $backup_size);
 
             # LOAD CLASS
             App::register(\Spatie\Backup\BackupServiceProvider::class);

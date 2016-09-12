@@ -29,3 +29,10 @@ fields:
         type        : switch
         span        : left
         default     : false
+
+    backups_size_limit:
+        label       : martin.backups::lang.settings.form.backups_size_limit
+        comment     : martin.backups::lang.settings.form.backups_size_limit_c
+        type        : number
+        span        : left
+        default     : 500

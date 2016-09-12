@@ -21,6 +21,7 @@
 
         public function onBackup() {
             \Artisan::call('backup:run');
+            \Artisan::call('backup:clean');
             \Flash::success(e(trans('martin.backups::lang.settings.form.toolbar.backup_flash')));
         }
 

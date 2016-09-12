@@ -2,3 +2,5 @@
     - First version of Backups plugin
 1.0.1:
     - Manual backups
+1.0.2:
+    - Added size limit option
