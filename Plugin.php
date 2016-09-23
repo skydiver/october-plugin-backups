@@ -5,6 +5,7 @@
     use App, Config;
     use System\Classes\PluginBase;
     use Martin\Backups\Models\Settings;
+    use Spatie\Backup\BackupServiceProvider;
 
     class Plugin extends PluginBase {
 
@@ -49,7 +50,9 @@
             Config::set('laravel-backup.cleanup.defaultStrategy.deleteOldestBackupsWhenUsingMoreMegabytesThan', $backup_size);
 
             # LOAD CLASS
-            App::register(\Spatie\Backup\BackupServiceProvider::class);
+            if(class_exists(BackupServiceProvider::class)) {
+                App::register(BackupServiceProvider::class);
+            }
 
         }
 
