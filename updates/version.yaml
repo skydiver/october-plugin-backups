@@ -4,3 +4,5 @@
     - Manual backups
 1.0.2:
     - Added size limit option
+1.0.3:
+    - Check if "BackupServiceProvider" class exists before load
